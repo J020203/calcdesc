@@ -2,4 +2,4 @@ Este programa sirve para calcular el precio final según el precio y el descuent
 
 Como usar:
   ./calcdes.py    ----->    Corre el programa normal
-  ./calcdes.py -p PRECIO -d DESCUENTO   ----->    Corre el programa según el precio y el descuento en una sola línea
+  ./calcdes.py -p PRECIO -d DESCUENTO   ----->    Corre el programa según el precio y el descuento en una sola línea.
