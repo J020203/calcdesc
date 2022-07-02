@@ -1,6 +1,20 @@
-Este programa sirve para calcular el precio final según el precio y el descuento que se le proporcione.
+# CalcDesc
 
-Como usar:
+Este programa sirve para calcular el precio final según el precio original y el descuento que se le proporcione.
 
-  ./calcdes.py    ----->    Corre el programa normal  
-  ./calcdes.py -p PRECIO -d DESCUENTO   ----->    Corre el programa según el precio y el descuento en una sola línea.
+
+## Usage/Examples
+
+- Linux:
+    ```bash
+    chmod +x calcdes.py
+    ./calcdes.py # Corre el programa de forma interactiva.
+    ./calcdes.py -p [PRECIO] -d [DESCUENTO] # Corre el programa según el precio y el descuento en una sola línea.
+    ```
+
+
+## Features
+
+- Se encuentra optimizado.
+- Uso interactivo y en una sola línea.
+
