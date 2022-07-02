@@ -13,7 +13,7 @@ def parserF():
     return parser.parse_args()
 
 def discount(precio: float, desc: float) -> float:
-    return precio - (precio * (desc / 100))
+    return precio - (precio * 0.01 * desc)
 
 def pcs(args):
     try:
