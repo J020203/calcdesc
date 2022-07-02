@@ -1,19 +1,19 @@
 #!/usr/bin/python3
 
-import argparse
+from argparse import ArgumentParser, RawTextHelpFormatter
 
 def parserF():
-    parser = argparse.ArgumentParser(
+    parser = ArgumentParser(
         description = 'Este es un programa para calcular el precio final según el precio y el descuento que se proporcionen.',
-        formatter_class = argparse.RawTextHelpFormatter
+        formatter_class = RawTextHelpFormatter
     )
     parser.add_argument("-p", "--precio", help = "Indica el precio del producto.")
     parser.add_argument("-d", "--descuento", help = "Indica el descuento que se le aplica al precio.")
     parser.add_argument("-v", "--version", action = 'version' ,version='%(prog)s 1.0')
     return parser.parse_args()
 
-def discount(precio, desc):
-    return float(precio - (precio * (desc / 100)))
+def discount(precio: float, desc: float) -> float:
+    return precio - (precio * (desc / 100))
 
 def pcs(args):
     try:
